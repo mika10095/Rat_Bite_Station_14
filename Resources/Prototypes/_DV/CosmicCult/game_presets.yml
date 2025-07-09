@@ -7,7 +7,6 @@
   showInVote: false
   #cooldown: 1
   rules:
-    - PermaBrig # RatBite - Multi-Round brig system
     - CosmicCult
     - SubGamemodesRule
     #- MeteorSwarmScheduler - Goob Edit
@@ -23,7 +22,6 @@
   description: secret-description
   showInVote: false
   rules:
-    - PermaBrig # RatBite - Multi-Round brig system
     - CosmicCult
     - SubGamemodesRule
     #- MeteorSwarmScheduler - Goob Edit

@@ -1,5 +1,0 @@
-- type: entity
-  parent: BaseGameRule
-  id: PermaBrig
-  components:
-  - type: PermaBrig

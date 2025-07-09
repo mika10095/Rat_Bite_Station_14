@@ -471,18 +471,6 @@ namespace Content.Server.Database
         Task SendNotification(DatabaseNotification notification);
 
         #endregion
-
-        #region Perma Brig
-
-        Task<int> GetPermaRoundsLeft(NetUserId userId); // Ratbite
-        Task SetPermaRoundsLeft(NetUserId userId, int BrigSentence); // Ratbite
-        Task<int> ModifyPermaRoundsLeft(NetUserId userId, int BrigSentence); // Ratbite
-
-        Task<int> GetPPpoints(NetUserId userId); // Ratbite
-        Task SetPPpoints(NetUserId userId, int BrigSentence); // Ratbite
-        Task<int> ModifyPPpoints(NetUserId userId, int BrigSentence); // Ratbite
-
-        #endregion
     }
 
     /// <summary>
@@ -789,40 +777,6 @@ namespace Content.Server.Database
         {
             DbReadOpsMetric.Inc();
             return RunDbCommand(() => _db.SetLastRolledAntag(userId, to));
-        }
-
-        public Task<int> GetPermaRoundsLeft(NetUserId userId) // Ratbite
-        {
-            DbReadOpsMetric.Inc();
-            return RunDbCommand(() => _db.GetPermaRoundsLeft(userId));
-        }
-        public Task SetPermaRoundsLeft(NetUserId userId, int permaSentence) // Ratbite
-        {
-            DbReadOpsMetric.Inc();
-            return RunDbCommand(() => _db.SetPermaRoundsLeft(userId, permaSentence));
-        }
-
-        public Task<int> ModifyPermaRoundsLeft(NetUserId userId, int permaSentence) // Ratbite
-        {
-            DbReadOpsMetric.Inc();
-            return RunDbCommand(() => _db.ModifyPermaRoundsLeft(userId, permaSentence));
-        }
-
-        public Task<int> GetPPpoints(NetUserId userId) // Ratbite
-        {
-            DbReadOpsMetric.Inc();
-            return RunDbCommand(() => _db.GetPPpoints(userId));
-        }
-        public Task SetPPpoints(NetUserId userId, int permaSentence) // Ratbite
-        {
-            DbReadOpsMetric.Inc();
-            return RunDbCommand(() => _db.SetPPpoints(userId, permaSentence));
-        }
-
-        public Task<int> ModifyPPpoints(NetUserId userId, int permaSentence) // Ratbite
-        {
-            DbReadOpsMetric.Inc();
-            return RunDbCommand(() => _db.ModifyPPpoints(userId, permaSentence));
         }
 
         public Task<int> AddConnectionLogAsync(
