@@ -291,7 +291,7 @@
       fallbackRoles: [ NukeopsCommander, NukeopsMedic ]
       spawnerPrototype: SpawnPointNukeopsOperative
       max: 10 # Goobstation / 古布空间站 - 没有限制的核特工
-      playerRatio: 16 # Goobstation
+      playerRatio: 10 #RatBite more nukies I just want 3 nukies spawning with like 20+ pop
       startingGear: SyndicateOperativeGearFull
       unequipOldGear: true
       roleLoadout:

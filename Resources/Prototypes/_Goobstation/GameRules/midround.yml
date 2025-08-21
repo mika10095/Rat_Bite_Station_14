@@ -115,7 +115,7 @@
     definitions:
     - prefRoles: [ Heretic ]
       max: 1
-      playerRatio: 15
+      playerRatio: 10 #RatBite adjusted to have same ratio as ling and syndie.
       blacklist:
         components:
         - AntagImmune
@@ -177,7 +177,7 @@
   id: SkeletonMidround
   components:
   - type: StationEvent
-    weight: 5
+    weight: 3 #RatBite less skellies to see more other stuff. (though IDK why these are in 2 places)
     duration: 1
     minimumPlayers: 15
     chaos:
