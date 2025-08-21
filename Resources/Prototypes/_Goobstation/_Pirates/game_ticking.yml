@@ -16,11 +16,11 @@
   id: SpacePirates
   components:
   - type: StationEvent
-    weight: 5
+    weight: 3 #RatBite
     duration: null
     earliestStart: 20
     reoccurrenceDelay: 60
-    minimumPlayers: 30
+    minimumPlayers: 15 #RatBite
     chaos:
       Hostile: 50
       Medical: 50

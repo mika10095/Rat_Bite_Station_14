@@ -65,7 +65,7 @@
   id: CalmTraitor # For Dual Antag Gamemodes
   components:
   - type: GameRule
-    minPlayers: 30
+    minPlayers: 15 #RatBite
     chaosScore: 700
   - type: AntagSelection
     selectionTime: IntraPlayerSpawn
@@ -89,7 +89,7 @@
   id: CalmLing # For Dual Antag Gamemodes
   components:
   - type: GameRule
-    minPlayers: 30
+    minPlayers: 15 #RatBite
     chaosScore: 450
   - type: AntagSelection
     selectionTime: IntraPlayerSpawn
@@ -110,7 +110,7 @@
   id: Calmops # For Dual Antag Gamemodes
   components:
   - type: GameRule
-    minPlayers: 30
+    minPlayers: 15 #RatBite NUKIES JUST A WEEK AWAY
     chaosScore: 1000
   - type: LoadMapRule
     mapPath: /Maps/_Goobstation/Nonstations/nukieplanet.yml
@@ -180,7 +180,7 @@
   parent: BaseGameRule
   components:
   - type: GameRule
-    minPlayers: 30
+    minPlayers: 15 #RatBite
     chaosScore: 700
   - type: RevolutionaryRule
   - type: AntagSelection
@@ -246,7 +246,7 @@
     weight: 15
     duration: 1
     earliestStart: 50
-    minimumPlayers: 20
+    minimumPlayers: 15 #RatBite
     maxOccurrences: 2
     chaos:
       Hostile: 200

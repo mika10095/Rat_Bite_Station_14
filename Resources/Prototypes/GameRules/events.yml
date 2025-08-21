@@ -287,7 +287,7 @@
   - type: StationEvent
     weight: 7
     duration: 1
-    minimumPlayers: 15
+    minimumPlayers: 5 #Ratbite
     chaos: # Goobstation
       Power: 100
     eventType: Maintenance # Goobstation
@@ -302,8 +302,8 @@
   components:
   - type: StationEvent
     startAnnouncement: station-event-bureaucratic-error-announcement
-    minimumPlayers: 25
-    weight: 3
+    minimumPlayers: 10 # RatBite
+    weight: 1 # RatBite
     duration: 1
     eventType: Neutral # Goobstation
   # Goobstation
@@ -319,8 +319,8 @@
   components:
   - type: StationEvent
     startAnnouncement: station-event-clerical-error-announcement
-    minimumPlayers: 15
-    weight: 5
+    minimumPlayers: 15 # RatBite
+    weight: 2 # RatBite
     duration: 1
     eventType: Chaotic # Goobstation
   # Goobstation
@@ -348,10 +348,10 @@
   id: DragonSpawn
   components:
   - type: StationEvent
-    weight: 3
+    weight: 0.5 #RatBite very rare dragon
     earliestStart: 45
-    reoccurrenceDelay: 20
-    minimumPlayers: 60
+    reoccurrenceDelay: 10
+    minimumPlayers: 15 #RatBite
     duration: null
     chaos: # Goobstation
       Hostile: 20
@@ -387,11 +387,11 @@
   id: NinjaSpawn
   components:
   - type: StationEvent
-    weight: 6
+    weight: 3 #RatBite made rarer as well
     duration: null
     earliestStart: 45
     reoccurrenceDelay: 20
-    minimumPlayers: 30
+    minimumPlayers: 15 #RatBite
     chaos: # Goobstation
       Hostile: 20
       Friend: 20
@@ -456,11 +456,11 @@
   id: ParadoxCloneSpawn
   components:
   - type: StationEvent
-    weight: 5
+    weight: 3 # RatBite made rarer
     duration: null
     earliestStart: 20
     reoccurrenceDelay: 20
-    minimumPlayers: 15
+    minimumPlayers: 10 # RatBite
     eventType: Chaotic # Goobstation
   # Goobstation
   - type: GameRule
@@ -496,10 +496,10 @@
   id: RevenantSpawn
   components:
   - type: StationEvent
-    weight: 3.5
+    weight: 2 #RatBite people dont like revs but its fine if its rarer
     duration: 1
     earliestStart: 30
-    minimumPlayers: 20
+    minimumPlayers: 10 #RatBite
     chaos: # Goobstation
       Hostile: 20
       Friend: 20
@@ -587,8 +587,8 @@
   components:
   - type: StationEvent
     earliestStart: 15
-    minimumPlayers: 15
-    weight: 7
+    minimumPlayers: 10
+    weight: 3 #RatBite people dont like kudzu especially when no bota
     duration: 240
     chaos:
       Hostile: 20
@@ -663,7 +663,7 @@
     startAudio:
       path: /Audio/Announcements/attention.ogg
     earliestStart: 15
-    minimumPlayers: 15
+    minimumPlayers: 10
     weight: 5
     duration: 60
     chaos: # Goobstation
@@ -683,7 +683,7 @@
     startAudio:
       path: /Audio/Announcements/aliens.ogg
     earliestStart: 20
-    minimumPlayers: 15
+    minimumPlayers: 10
     weight: 5
     duration: 30 # DeltaV: was 60, used as a delay now
     chaos: # Goobstation
@@ -709,7 +709,7 @@
     startAudio:
       path: /Audio/Announcements/attention.ogg
     earliestStart: 20
-    minimumPlayers: 15
+    minimumPlayers: 10
     weight: 5
     duration: 30 # DeltaV: was 60, used as a delay now
     chaos: # Goobstation
@@ -735,7 +735,7 @@
     startAudio:
       path: /Audio/Announcements/aliens.ogg
     earliestStart: 20
-    minimumPlayers: 15
+    minimumPlayers: 10
     weight: 5
     duration: 30 # DeltaV: was 60, used as a delay now
     chaos: # Goobstation
@@ -758,7 +758,7 @@
     startAudio:
       path: /Audio/Announcements/attention.ogg
     earliestStart: 45 # DeltaV - was 20
-    minimumPlayers: 30 # DeltaV - was 20
+    minimumPlayers: 10 #RatBite
     weight: 1 # DeltaV - was 1.5
     duration: 30 # DeltaV: was 60, used as a delay now
     chaos: # Goobstation
@@ -778,8 +778,8 @@
   parent: BaseGameRule
   components:
   - type: StationEvent
-    earliestStart: 90
-    minimumPlayers: 40
+    earliestStart: 30 #RatBite
+    minimumPlayers: 15 #RatBite seeing some outbreaks might be nice
     weight: 1 # Zombies was happening basically every single survival round, so now it's super rare
     duration: 1
     chaos: # Goobstation
@@ -789,7 +789,7 @@
     eventType: HostilesSpawn # Goobstation
   # Goobstation
   - type: GameRule
-    chaosScore: 1400
+    chaosScore: 700 #RatBite
   - type: ZombieRule
   - type: AntagSelection
     definitions:
@@ -822,7 +822,7 @@
   - type: StationEvent
     earliestStart: 35
     weight: 5.5
-    minimumPlayers: 20
+    minimumPlayers: 15 #Never ever spawned before
     duration: 1
     chaos: # Goobstation
       Hostile: 60
@@ -831,7 +831,7 @@
     eventType: HostilesSpawn # Goobstation
   # Goobstation
   - type: GameRule
-    chaosScore: 700
+    chaosScore: 350 #RatBite
   - type: RuleGrids
   - type: LoadMapRule
     gridPath: /Maps/Shuttles/ShuttleEvent/striker.yml
@@ -873,7 +873,7 @@
   - type: StationEvent
     earliestStart: 30
     weight: 8
-    minimumPlayers: 15
+    minimumPlayers: 15 #RatBite
     maxOccurrences: 1 # can only happen once per round
     startAnnouncement: station-event-communication-interception
     startAudio:
@@ -944,9 +944,9 @@
   components:
   - type: StationEvent
     earliestStart: 0
-    minimumPlayers: 20
+    minimumPlayers: 10 #RatBite
     maxOccurrences: 1 # this event has diminishing returns on interesting-ness, so we cap it
-    weight: 5
+    weight: 3 #RatBite
     chaos: # Goobstation
       Hostile: 20 # for when they're actually properly hostile
       Hunger: 10
@@ -964,8 +964,8 @@
   - type: StationEvent
     startAudio:
       path: /Audio/Announcements/attention.ogg
-    weight: 5
-    minimumPlayers: 25
+    weight: 2 #RatBite kinda useless of an event
+    minimumPlayers: 5 #RatBite still it should spawn
     reoccurrenceDelay: 20
     chaos: # Goobstation
       Atmos: 15
@@ -993,7 +993,7 @@
     earliestStart: 0
     duration: 1
     minimumPlayers: 1
-    maxOccurrences: 2
+    maxOccurrences: 5 # RatBite more stashes for the people
     weight: 10
   - type: RandomSpawnRule
     prototype: RandomSatchelSpawner

@@ -91,9 +91,9 @@
   - type: AntagSpawner
     prototype: MobLesserSlaughterDemon
   - type: StationEvent
-    weight: 5.5
+    weight: 1.5 #RatBite
     earliestStart: 50
-    minimumPlayers: 35
+    minimumPlayers: 15 #RatBite
     duration: null
     maxOccurrences: 1
     chaos:

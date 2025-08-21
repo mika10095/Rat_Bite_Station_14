@@ -3,10 +3,10 @@
   id: RogueAscendedSpawn
   components:
   - type: StationEvent
-    weight: 6.5
+    weight: 3 #RatBite
     earliestStart: 30
     reoccurrenceDelay: 20
-    minimumPlayers: 30
+    minimumPlayers: 20 #RatBite
     duration: null
   - type: SpaceSpawnRule
   - type: AntagSpawner
