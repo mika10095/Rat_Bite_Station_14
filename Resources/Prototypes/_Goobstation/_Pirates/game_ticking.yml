@@ -16,7 +16,7 @@
   id: SpacePirates
   components:
   - type: StationEvent
-    weight: 3 #RatBite
+    weight: 2 #RatBite cargo would never have money either but its a lot of ghost roles for a ship full.
     duration: null
     earliestStart: 20
     reoccurrenceDelay: 60

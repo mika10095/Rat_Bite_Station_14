@@ -287,7 +287,7 @@
   - type: StationEvent
     weight: 7
     duration: 1
-    minimumPlayers: 5 #Ratbite
+    minimumPlayers: 15
     chaos: # Goobstation
       Power: 100
     eventType: Maintenance # Goobstation
@@ -350,7 +350,7 @@
   - type: StationEvent
     weight: 0.5 #RatBite very rare dragon
     earliestStart: 45
-    reoccurrenceDelay: 10
+    reoccurrenceDelay: 20
     minimumPlayers: 15 #RatBite
     duration: null
     chaos: # Goobstation
@@ -778,7 +778,7 @@
   parent: BaseGameRule
   components:
   - type: StationEvent
-    earliestStart: 30 #RatBite
+    earliestStart: 45 #RatBite
     minimumPlayers: 15 #RatBite seeing some outbreaks might be nice
     weight: 1 # Zombies was happening basically every single survival round, so now it's super rare
     duration: 1
@@ -789,7 +789,7 @@
     eventType: HostilesSpawn # Goobstation
   # Goobstation
   - type: GameRule
-    chaosScore: 700 #RatBite
+    chaosScore: 1400
   - type: ZombieRule
   - type: AntagSelection
     definitions:
@@ -831,7 +831,7 @@
     eventType: HostilesSpawn # Goobstation
   # Goobstation
   - type: GameRule
-    chaosScore: 350 #RatBite
+    chaosScore: 700
   - type: RuleGrids
   - type: LoadMapRule
     gridPath: /Maps/Shuttles/ShuttleEvent/striker.yml
@@ -965,7 +965,7 @@
     startAudio:
       path: /Audio/Announcements/attention.ogg
     weight: 2 #RatBite kinda useless of an event
-    minimumPlayers: 5 #RatBite still it should spawn
+    minimumPlayers: 15 #RatBite still it should spawn
     reoccurrenceDelay: 20
     chaos: # Goobstation
       Atmos: 15
